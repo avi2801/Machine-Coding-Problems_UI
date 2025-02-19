@@ -1,0 +1,17 @@
+.main_container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.time_container {
+	display: flex;
+	flex-direction: row;
+	gap:30px;
+}
+
+.input_class {
+	display: flex;
+	flex-direction: column;
+}

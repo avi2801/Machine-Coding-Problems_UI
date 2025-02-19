@@ -1,0 +1,26 @@
+.main__container {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.button__class {
+	display: flex;
+	gap: 20px;
+
+}
+
+.button__class button {
+	cursor: pointer;
+}
+
+.product__class img {
+	border:1px solid black;
+	padding:10px;
+	margin:20px;
+	background-color: antiquewhite;
+	border-radius: 10px;
+}
