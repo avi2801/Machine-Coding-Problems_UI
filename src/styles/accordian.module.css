@@ -1,0 +1,38 @@
+.main__container {
+	display: flex;
+	flex-direction: column;
+
+
+}
+
+.accordian__container {
+	border-bottom: 1px solid black;
+	padding: 8px 12px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	cursor: pointer;
+}
+
+.accordian__content {
+	max-height: 0;
+	overflow: hidden;
+	transform: transition 0.3s ease-in-out;
+	opacity: 0;
+}
+
+
+.show {
+	max-height: 200px;
+	/* Adjust based on content size */
+	opacity: 1;
+}
+
+.accordian__container span {
+	font-size: 24px;
+	/* Increase the size */
+	font-weight: bold;
+	/* Make it bold */
+	transition: transform 0.3s ease-in-out;
+
+}

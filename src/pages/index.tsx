@@ -1,9 +1,10 @@
-import OtpFeild from "../components/OtpFeild";
+import Accordian from '@/components/Accordian';
+import accordionData from '../data/accordianData'
 
 export default function Home() {
 	return (
 		<>
-			<OtpFeild otpFeildLength={4} />
+			<Accordian accordianData={accordionData} />
 		</>
 	);
 }
