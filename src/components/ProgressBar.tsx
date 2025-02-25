@@ -6,14 +6,23 @@ type ProgressBarTypes = {
 };
 
 const ProgressBar = ({ percentage }: ProgressBarTypes) => {
-	const { main_container } = styles;
+	const { main_container, inner_container } = styles;
+	const [activeProgress, setActiveProgress] = useState(0)
+	useEffect(() => {
+		setTimeout(() => {
+			setActiveProgress(percentage)
+		},500)
+	},[])
 
 	return (
 		<>
-			<h2>Progress Bar</h2>
 			<div className={main_container}>
-				<span>{percentage.toFixed()}%</span>
-				<div style={{ width: `${percentage}%` }} />
+				<div
+					className={inner_container}
+					style={{ transform: `translateX(${activeProgress - 100}%)` }}
+				>
+					{activeProgress}%
+				</div>
 			</div>
 		</>
 	);

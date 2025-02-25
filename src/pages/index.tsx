@@ -1,9 +1,13 @@
-import Tabs from '../components/Tabs'
+import ProgressBar from "@/components/ProgressBar";
 
 export default function Home() {
+	const bars = [5, 10, 30, 65, 90, 100];
 	return (
 		<>
-			<Tabs/>
+			<h2>Progress Bar</h2>
+			{bars.map((bar, index) => (
+				<ProgressBar percentage={bar} key={index} />
+			))}
 		</>
 	);
 }
