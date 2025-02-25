@@ -1,10 +1,9 @@
-import Accordian from '@/components/Accordian';
-import accordionData from '../data/accordianData'
+import Tabs from '../components/Tabs'
 
 export default function Home() {
 	return (
 		<>
-			<Accordian accordianData={accordionData} />
+			<Tabs/>
 		</>
 	);
 }
