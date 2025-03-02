@@ -1,4 +1,5 @@
-body{
+.main_container{
+	display:flex;
 	background-color: black;
 	color: white;
 	font-family:'montserrat, sans-serif';

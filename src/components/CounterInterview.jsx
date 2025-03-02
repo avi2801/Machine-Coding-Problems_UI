@@ -4,7 +4,6 @@ import {useEffect,useState} from 'react';
 const useInterval = (callBack, intervalTime) =>{
     const [isRunning,setIsRunning] = useState(false);
      useEffect(()=>{
-         console.log('!@# isRunning', isRunning)
          if(!isRunning || intervalTime === null) return;
         const intervalId =  setInterval(()=>{
             callBack()
@@ -30,9 +29,6 @@ export default function CounterInterview() {
         setCounter((prev)=>prev+1)
     }
       const {isRunning, start,stop} = useInterval(increaseCounter,1000);
-    console.log('!@# 33', start)
-
-
 
   return(
       <>
