@@ -1,5 +1,5 @@
-import Counter from '../components/counter/Counter'
+import TrafficLights from '../components/trafficLights/TrafficLights'
 
 export default function Home() {
-	return <Counter />
+	return <TrafficLights />
 }

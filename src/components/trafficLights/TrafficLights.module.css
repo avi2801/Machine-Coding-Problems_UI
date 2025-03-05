@@ -1,0 +1,20 @@
+.main_container {
+	display: flex;
+	flex-direction: column;
+	border: 1px solid greenyellow;
+	padding: 12px 16px;
+	align-items: center;
+	gap: 20px;
+}
+
+.traffic_component {
+	border: 1px solid white;
+	height: 90px;
+	width: 50px;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: antiquewhite;
+	color:black
+}
