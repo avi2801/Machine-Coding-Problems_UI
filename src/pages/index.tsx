@@ -1,5 +1,5 @@
-import TrafficLights from '../components/trafficLights/TrafficLights'
+import TodoList from '../components/todoList/TodoList'
 
 export default function Home() {
-	return <TrafficLights />
+	return <TodoList />
 }

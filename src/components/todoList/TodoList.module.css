@@ -1,0 +1,41 @@
+.main_container {
+	display: flex;
+	flex-direction: column;
+	border: 1px solid greenyellow;
+	padding: 12px 16px;
+	align-items: center;
+	gap: 20px;
+}
+
+.input_container input {
+	width: 300px;
+}
+
+.button_class button {
+
+	height: 30px;
+	border-radius: 6px;
+	background-color: rgb(35, 232, 35);
+	border: none;
+	cursor: pointer;
+}
+
+.todoList_style_container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 10px;
+	border: 1px solid rgb(232, 126, 126);
+	border-radius: 4px;
+	padding: 12px 10px;
+	min-width: 300px;
+	margin-top:20px;
+}
+.todoList_style_container button{
+	border:none;
+	border-radius: 4px;
+	background-color: rgb(185, 5, 5);
+	color: antiquewhite;
+	height:30px;
+	cursor: pointer;
+}
