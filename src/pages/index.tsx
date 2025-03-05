@@ -1,5 +1,5 @@
-import FolderStructure from "../components/folderStructure/FolderStructure";
+import Counter from '../components/counter/Counter'
 
 export default function Home() {
-	return <FolderStructure />;
+	return <Counter />
 }
