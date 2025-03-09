@@ -1,5 +1,9 @@
-import TodoList from '../components/todoList/TodoList'
+import SearchBar from "../components/searchBar/SearchBar";
 
 export default function Home() {
-	return <TodoList />
+	return (
+		<div>
+			<SearchBar />
+		</div>
+	);
 }

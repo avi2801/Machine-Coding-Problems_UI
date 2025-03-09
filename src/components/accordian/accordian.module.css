@@ -1,0 +1,28 @@
+.accordian_container {
+	display: flex;
+	justify-content: start;
+	flex-direction: column;
+	gap: 20px;
+
+}
+
+
+.main_container {
+	border: 1px solid rgb(169, 112, 5);
+	padding: 12px;
+	margin: 20px;
+	display: flex;
+	justify-content: space-between;
+	background-color: rgb(169, 112, 5);
+}
+
+.cta_container button {
+	width: 60px;
+	height: 30px;
+	border: none;
+	color: black;
+	background-color: rgb(17, 183, 17);
+	font-size: medium;
+	cursor: pointer;
+	border-radius: 6px;
+}

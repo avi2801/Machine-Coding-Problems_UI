@@ -2,7 +2,12 @@ import React, { useState } from "react";
 import styles from "./TodoList.module.css";
 
 const TodoList = () => {
-	const { main_container, input_container, button_class,todoList_style_container } = styles;
+	const {
+		main_container,
+		input_container,
+		button_class,
+		todoList_style_container,
+	} = styles;
 	const [todoList, setTodoList] = useState([]);
 	const [inputTask, setInputTask] = useState("");
 
@@ -21,9 +26,15 @@ const TodoList = () => {
 	};
 
 	const handleTaskDone = (id) => {
-		const newList = todoList.filter((list) => list.id !== id)
-		setTodoList(newList)
-	}
+		const newList = todoList.filter((list) => list.id !== id);
+		setTodoList(newList);
+	};
+
+	const handleEdit = (id) => {
+		const selectedList = todoList.filter((list) => list.id === id);
+		handleTaskDone(id);
+		setInputTask(selectedList[0].value);
+	};
 
 	return (
 		<div className={main_container}>
@@ -41,14 +52,13 @@ const TodoList = () => {
 				<button onClick={handleAddTask}>Add Task</button>
 			</div>
 			<div>
-
-					{todoList?.map((list, index) => (
-						<div className={todoList_style_container}>
-							<span key={list.id}>{list.value}</span>
-							<button onClick={()=>handleTaskDone(list.id)}>Done</button>
-						</div>
-					))}
-
+				{todoList?.map((list, index) => (
+					<div className={todoList_style_container}>
+						<span key={list.id}>{list.value}</span>
+						<button onClick={() => handleTaskDone(list.id)}>Done</button>
+						<button onClick={() => handleEdit(list.id)}>Edit</button>
+					</div>
+				))}
 			</div>
 		</div>
 	);
