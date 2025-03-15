@@ -1,0 +1,51 @@
+.main_pagenation_container {
+	display: flex;
+	flex-direction: column;
+	gap:20px;
+	padding:12px;
+	border: 1px solid yellowgreen;
+
+}
+
+.item_container {
+	display: flex;
+	flex-direction: row;
+	gap:10px;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.item_container div{
+
+	display: flex;
+	flex-direction: column;
+	height:200px;
+	width: 200px;
+	overflow: hidden;
+	align-items: center;
+	justify-content: center;
+	gap:10px;
+	background-color: rgb(172, 231, 231);
+	color: black;
+	border-radius: 6px;
+}
+.item_container div img{
+	width:150px;
+	height: 100px;
+}
+
+.button_container {
+	display: flex;
+	gap:10px;
+	justify-content: center;
+
+}
+.button_container button{
+	width:60px;
+	height:30px;
+	background-color: rgb(0, 248, 0);
+	border:none;
+	color:whitesmoke;
+	border-radius: 8px;
+	cursor: pointer;
+}
+

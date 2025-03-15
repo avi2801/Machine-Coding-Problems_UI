@@ -1,9 +1,9 @@
-import SearchBar from "../components/searchBar/SearchBar";
+import StarComponent from '../components/starComponent/StarComponent'
 
 export default function Home() {
 	return (
 		<div>
-			<SearchBar />
+			<StarComponent/>
 		</div>
 	);
 }
