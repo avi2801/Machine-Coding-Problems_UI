@@ -1,0 +1,22 @@
+.main_sorting_component {
+	display: flex;
+	border: 1px solid black;
+	padding:12px;
+	flex-direction: column;
+
+}
+
+
+.main_sorting_component table{
+	width:100%;
+	text-align: left;
+	border-collapse: collapse;
+}
+.main_sorting_component table th{
+	border:1px solid rgb(255, 255, 255);
+	padding:10px;
+}
+.main_sorting_component table td{
+	border:1px solid rgb(231, 231, 231);
+	padding: 10px;
+}
