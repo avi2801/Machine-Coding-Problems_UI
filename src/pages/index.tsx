@@ -1,9 +1,9 @@
-import StarComponent from '../components/starComponent/StarComponent'
+import Game from '../components/tic-tac-toe/Game';
 
 export default function Home() {
 	return (
 		<div>
-			<StarComponent/>
+			<Game/>
 		</div>
 	);
 }
