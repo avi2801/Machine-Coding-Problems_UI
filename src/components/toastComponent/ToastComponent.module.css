@@ -1,0 +1,43 @@
+.main_container {
+	padding: 20px;
+	display: flex;
+	gap: 20px;
+	align-items: center;
+	border-radius: 6px;
+	border: 1px solid white;
+}
+.success {
+	background-color: green;
+}
+.error {
+	background-color: red;
+}
+.info {
+	background-color: blueviolet;
+}
+.warning {
+	background-color: yellow;
+}
+.close_button{
+	cursor: pointer;
+}
+.bottom-right{
+	position: fixed;
+	bottom:20px;
+	right:20px;
+}
+.top-right{
+	position: fixed;
+	top:20px;
+	right:20px;
+}
+.top-left{
+	position: fixed;
+	left:20px;
+	top:20px;
+}
+.bottom-left{
+	position: fixed;
+	left:20px;
+	bottom:20px;
+}
