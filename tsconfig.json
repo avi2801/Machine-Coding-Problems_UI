@@ -17,6 +17,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/components/game/Game.jsx", "src/components/game/GameBoard.jsx", "src/components/game/LeaderBoard.jsx"],
   "exclude": ["node_modules"]
 }
