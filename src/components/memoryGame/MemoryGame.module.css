@@ -1,0 +1,41 @@
+.main_container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.matrix_card{
+	display: flex;
+	flex-direction: row;
+	width:180px;
+	flex-wrap: wrap;
+	margin-top: 20px;
+	justify-content: center;
+	gap:4px;
+}
+
+.card_input_block{
+	width:40px;
+	height:40px;
+	border: 1px solid white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	cursor: pointer;
+	color:black;
+	background-color: aliceblue;
+
+}
+
+.newBackGround{
+	background-color: blue;
+	color:white;
+	font-style: bold;
+	border:none
+}
+.cardFlipped{
+	background-color: green;
+	color:white;
+}
