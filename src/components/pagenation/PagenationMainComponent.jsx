@@ -21,11 +21,7 @@ const Pagenation = ({ productList, productPerPage }) => {
 			? setCurretnPage((prev) => prev - 1)
 			: setCurretnPage((prev) => prev + 1);
 	};
-	console.log(
-		"curren",
-		currentPage,
-		parseInt(productList.length / productPerPage)
-	);
+	
 
 	return (
 		<div className={main_pagenation_container}>

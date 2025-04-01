@@ -1,10 +1,5 @@
-import PollWidget from "../components/pollWidget/PollWidget";
+import TodoList from '../components/todoList/TodoList'
 
-export const mainContainer = {
-	display: "flex",
-	flexDirection: "column",
-	justifyContent: "center",
-};
 
 export default function Home() {
 	// const { ToastComponent, triggerToast } = useToast("bottom-right");
@@ -25,7 +20,8 @@ export default function Home() {
 			>
 				Trigger
 			</button> */}
-			<PollWidget />
+			{/* <PollWidgetMainComponent/> */}
+			<TodoList/>
 		</div>
 	);
 }
