@@ -1,12 +1,9 @@
-import ProgressBar from '../components/progressBar/ProgressBar'
-
+import LandingPage from "../components/landingPage/LandingPage";
 
 export default function Home() {
 	// const { ToastComponent, triggerToast } = useToast("bottom-right");
 	return (
-		<div
-
-		>
+		<div>
 			{/* {ToastComponent}
 			<button
 				onClick={() =>
@@ -16,9 +13,7 @@ export default function Home() {
 				Trigger
 			</button> */}
 			{/* <PollWidgetMainComponent/> */}
-			<ProgressBar percentageFromProps={80} />
-			<ProgressBar percentageFromProps={20} />
-			<ProgressBar percentageFromProps={30} />
+			<LandingPage />
 		</div>
 	);
 }

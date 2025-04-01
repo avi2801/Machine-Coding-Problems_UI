@@ -1,0 +1,22 @@
+.tabs_main_container {
+	display: flex;
+	justify-content: flex-end; /* Aligns tabs to the right */
+	align-items: center;
+	gap: 20px; /* Slightly more space between tabs */
+	padding: 10px 20px;
+	height: 40px;
+	background: rgba(33, 33, 33, 0.5); /* Darker semi-transparent background */
+}
+
+.tabs_main_container span {
+	font-size: 16px;
+	color: #ecf0f1; /* Light gray text for contrast */
+	padding-right: 20px;
+	cursor: pointer;
+	transition: color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
+}
+
+.tabs_main_container span:hover {
+	color: #af894c; /* Green accent on hover */
+	transform: scale(1.05); /* Slight zoom effect on hover */
+}

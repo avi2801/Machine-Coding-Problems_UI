@@ -1,5 +1,11 @@
-body{
-	background-color: black;
-	color: white;
-	font-family:'montserrat, sans-serif';
+body {
+	font-family: 'Montserrat', sans-serif;
+	padding: 0;
+	margin: 0;
+	/* Add dark gradient with a subtle texture overlay */
+	background: linear-gradient(to bottom, #121212, #1a1a1a);
+
+	/* Dark gradient with texture overlay */
+	background-attachment: fixed; /* Keeps the background fixed as the user scrolls */
+	color: #e0e0e0; /* Light gray text for readability */
 }
