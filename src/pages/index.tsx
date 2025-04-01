@@ -1,16 +1,11 @@
-import TodoList from '../components/todoList/TodoList'
+import ProgressBar from '../components/progressBar/ProgressBar'
 
 
 export default function Home() {
 	// const { ToastComponent, triggerToast } = useToast("bottom-right");
 	return (
 		<div
-			style={{
-				display: "flex",
-				flexDirection: "column",
-				justifyContent: "center",
-				alignItems:'center'
-			}}
+
 		>
 			{/* {ToastComponent}
 			<button
@@ -21,7 +16,9 @@ export default function Home() {
 				Trigger
 			</button> */}
 			{/* <PollWidgetMainComponent/> */}
-			<TodoList/>
+			<ProgressBar percentageFromProps={80} />
+			<ProgressBar percentageFromProps={20} />
+			<ProgressBar percentageFromProps={30} />
 		</div>
 	);
 }

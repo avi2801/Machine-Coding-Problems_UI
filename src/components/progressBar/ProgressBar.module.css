@@ -1,0 +1,15 @@
+.outer_container {
+	border: 1px solid white;
+	overflow: hidden;
+	border-radius: 8px;
+	margin: 20px;
+  }
+
+  .inner_container {
+	background-color: rgb(246, 36, 36);
+	text-align: center;
+	color: white;
+	width: 0;
+	transition: width 5s ease-in-out;
+	text-align: center;
+  }
